@@ -1,0 +1,26 @@
+    Rules of Blackjack
+    -One player, you against the house 
+    -Get to 21 without going over, pretty simple
+
+    Each round this happens:
+    -One card is dealt to the player, then dealer face up
+    -Second card is dealt to player, then dealer but face down
+    -Take a hit or stand
+
+    ==Dealer's logic
+        ==After you stand, dealer will start taking cards
+        ==If under 17 total, dealer will hit again
+
+    ==Ace Card Logic
+        ==Calculate two values with 1 and 11
+
+    Win/Lose Conditions:
+    -Win: You hit 21 OR your cards are equal to MORE than the dealers
+    -Lose: You hit over 21 OR your cards are equal to LESS than the dealers
+    
+    Future considerations:
+    -Betting
+    -Implementing the rest of the special cases and rules in casino play
+    -**Possibility for multiplayer in future hehe
+    
+    
