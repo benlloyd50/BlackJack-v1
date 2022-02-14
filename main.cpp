@@ -21,6 +21,7 @@ int main() {
         game.DrawCard(dealer);
         while(toupper(tempChoice) != 'N') {
             if(game.DidYouBust(player)){
+                game.ShowHand(player);
                 std::cout << "Oopsie you busted with " << game.CalcHandTotal(player) << ", Dealer Wins!\n";
                 winner = dealer;
                 break;

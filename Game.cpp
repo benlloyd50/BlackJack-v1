@@ -75,6 +75,7 @@ int Game::Dealer() {
             return Dealer();
         }
     }
+    return Dealer(); 
 }
 
 bool Game::DidYouBust(char who) {
@@ -110,9 +111,8 @@ int Game::Stand(char who) {
             Stand(who); 
         }
     }
-    else {
-        return total;
-    }
+    return total;
+    
 }
 
 
