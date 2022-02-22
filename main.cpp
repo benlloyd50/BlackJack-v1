@@ -2,12 +2,16 @@
 #include "Game.h"
 
 int main() {
-    ArtGenerator ag;
     char tempChoice;
     char player = 'p', dealer = 'd';
     char winner = ' ';
     
-    ag.Intro();
+    std::cout << "┏━━┓┏┓╋╋╋╋╋╋┏┓╋╋╋┏┓╋╋╋╋╋┏┓\n";
+    std::cout << "┃┏┓┃┃┃╋╋╋╋╋╋┃┃╋╋╋┃┃╋╋╋╋╋┃┃\n";
+    std::cout << "┃┗┛┗┫┃┏━━┳━━┫┃┏┓╋┃┣━━┳━━┫┃┏┓\n";
+    std::cout << "┃┏━┓┃┃┃┏┓┃┏━┫┗┛╋┓┃┃┏┓┃┏━┫┗┛┛\n";
+    std::cout << "┃┗━┛┃┗┫┏┓┃┗━┫┏┓┫┗┛┃┏┓┃┗━┫┏┓┓\n";
+    std::cout << "┗━━━┻━┻┛┗┻━━┻┛┗┻━━┻┛┗┻━━┻┛┗┛\n";
     
     std::cout << "=Welcome to BlackJack=\n";
     std::cout << "Controls: h - hit, s - stand, h/l to play ace high or low\n"; 
