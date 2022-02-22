@@ -20,14 +20,12 @@ class Game {
         int Dealer();    //Plays the dealer turn and returns his hand total
         char DecideWinner();    //Declares a winner and returns their identity through a char
         
-        //Test Methods NOT USED IN ACTUAL GAME ONLY FOR TESTING DONT GET THEM CONFUSED
-        void TestShowDeck();    //Displays the deck, ONLY FOR TESTING
     private:
         std::vector<Card> _deck;    //The Deck
         std::vector<Card> pHand;    //Player's Hand
         std::vector<Card> dHand;    //Dealer's Hand
-        int pTotal = 0;
-        int dTotal = 0;
+        const char dealer = 'd';
+        const char player = 'p';
         ArtGenerator ag;
 };
 

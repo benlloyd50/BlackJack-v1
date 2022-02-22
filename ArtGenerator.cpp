@@ -55,7 +55,6 @@ std::string ArtGenerator::FindCardIdentity(Card c) {
         identity = type;
     }
     
-
     return identity;
 }
 
