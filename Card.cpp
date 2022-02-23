@@ -2,7 +2,6 @@
 #include "Card.h"
 
 Card::Card(int val, char suit) {
-    
     this->suit = suit;
     if(val > 9 || val == 0) {
         switch(val) {
@@ -30,14 +29,6 @@ Card::Card(int val, char suit) {
     }
     
 }
-
-void Card::PrintTextCard() {
-    if(type == ' ')
-        std::cout << suit << " | " << value << std::endl;
-    else
-        std::cout << suit << " | " << type << std::endl;
-}
-
 
 int Card::GetValue() {
     return value;

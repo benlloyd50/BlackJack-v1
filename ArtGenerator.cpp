@@ -1,14 +1,5 @@
 #include <iostream>
 #include "ArtGenerator.h"
-
-void ArtGenerator::Intro() {
-    std::cout << "┏━━┓┏┓╋╋╋╋╋╋┏┓╋╋╋┏┓╋╋╋╋╋┏┓\n";
-    std::cout << "┃┏┓┃┃┃╋╋╋╋╋╋┃┃╋╋╋┃┃╋╋╋╋╋┃┃\n";
-    std::cout << "┃┗┛┗┫┃┏━━┳━━┫┃┏┓╋┃┣━━┳━━┫┃┏┓\n";
-    std::cout << "┃┏━┓┃┃┃┏┓┃┏━┫┗┛╋┓┃┃┏┓┃┏━┫┗┛┛\n";
-    std::cout << "┃┗━┛┃┗┫┏┓┃┗━┫┏┓┫┗┛┃┏┓┃┗━┫┏┓┓\n";
-    std::cout << "┗━━━┻━┻┛┗┻━━┻┛┗┻━━┻┛┗┻━━┻┛┗┛\n";
-}
         
 void ArtGenerator::DrawCard(Card c, std::vector<std::string>& d) {
     //Need to print a suit and either val or type

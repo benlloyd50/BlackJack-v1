@@ -6,7 +6,6 @@
 
 class ArtGenerator {
     public:
-        void Intro();   //Just some ASCII Text I ripped from the web
         void DrawCard(Card c, std::vector<std::string>& d);    //Draw Individual Cards
         void DrawCardArray(std::vector<Card> v);    //Combine Individual Cards line by line
         std::string FindSuitSymbol(Card c);    //Creates the symbol of the suit

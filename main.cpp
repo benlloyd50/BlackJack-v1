@@ -44,7 +44,7 @@ int main() {
 
             //Stand
             else if(toupper(tempChoice) == 'S') {
-                game.DecideWinner();
+                winner = game.DecideWinner();
                 break; //GameOver
             }
         
