@@ -137,19 +137,19 @@ void Game::DrawCard(char who, int amt) {
 std::vector<Card> Game::PopulateDeck() {
     std::vector<Card> tempDeck;
     char cSuit;
-    for (int suit = 0; suit < 4; suit++) {
-        for (int i = 0; i < 13; i++) {
+    for (int suit = 1; suit < 5; suit++) {
+        for (int i = 1; i < 14; i++) {
             switch(suit) {
-                case 0:
+                case 1:
                     cSuit = 'D';
                     break;
-                case 1:
+                case 2:
                     cSuit = 'C';
                     break;
-                case 2:
+                case 3:
                     cSuit = 'S';
                     break;
-                case 3:
+                case 4:
                     cSuit = 'H';
                     break;
             }

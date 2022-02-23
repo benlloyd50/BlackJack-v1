@@ -3,28 +3,28 @@
 
 Card::Card(int val, char suit) {
     this->suit = suit;
-    if(val > 9 || val == 0) {
+    if(val > 10 || val == 1) {
         switch(val) {
-            case 0:     //Ace, alternate value is handled in the deck class when calcing total
+            case 1:     //Ace, alternate value is handled in the deck class when calcing total
                 type = 'A';
                 value = 1;
                 break;
-            case 10:    //Jack
+            case 11:    //Jack
                 type = 'J';
                 value = 10;
                 break;
-            case 11:    //Queen
+            case 12:    //Queen
                 type = 'Q';
                 value = 10;
                 break;
-            case 12:    //King
+            case 13:    //King
                 type = 'K';
                 value = 10;
                 break;
         }
     }
     else {
-        value = val + 1;
+        value = val;
         type = ' ';
     }
     
